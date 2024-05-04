@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "dbd70d44-201b-4401-9ead-2d6cf960583c",
+		"name": "Furniture",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18992211"
+	},
+	"item": [
+		{
+			"name": "AddToCart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"6613a953264228a0a9a84c2e\",\r\n    \"products\": {\r\n        \"productId\": \"6614b970db753e0d10b4ec20\",\r\n        \"quantity\": 1\r\n    }\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/cart/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"cart",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RemoveFromCart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"6613a953264228a0a9a84c2e\",\r\n    \"products\": {\r\n        \"productId\": \"6614b970db753e0d10b4ec20\",\r\n        \"quantity\": 2\r\n    }\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/cart/remove",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"cart",
+						"remove"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
